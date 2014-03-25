@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+<style>
+input[type="text"] 
+{
+    width: 470px;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td
+{
+    padding-right: 10px;
+}
+</style>
+
+<div id="loading" class="gray">Loading...</div>
+<div id="main" style="display:none;">
+Selected URL: <br><input id="selUrl" onclick="this.select();" type="text" value="" readonly />
+<br><br>
+Shortened link: <br><input id="shortUrl" onclick="this.select();" type="text" value="" readonly />
+<br><br>
+<table><tr><td>
+<input id="replace" type="button" class="action" value="Replace link" onclick="replace();">
+<input type="button" value="Close" onclick="google.script.host.close();">
+</td><td>
+<div id="status" class="gray"></div>
+</td></tr></table>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+var urls;
+
+$(function() {
+  google.script.run.withSuccessHandler(start)
+                   .withFailureHandler(fail)
+                   .shortenSelUrl();
+})
+
+function start(urlPair) {
+  urls = urlPair;
+  $('#selUrl').val(urls[0]);
+  $('#shortUrl').val(urls[1]);
+  $('#loading').hide();
+  $('#main').fadeIn();
+}
+
+function fail(error) {
+  google.script.run.showError(error.message + '.');
+}
+
+function replace() {
+  var clearStatus = function() {
+    $('#status').html('Link replaced.');
+  }
+  google.script.run.withSuccessHandler(clearStatus)
+                   .replaceSelectedInSelection(urls[0], urls[1]);
+  $('#status').html('Working...').fadeIn();
+  $('#replace').attr('disabled', true);
+}
+</script>
