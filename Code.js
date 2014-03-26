@@ -25,7 +25,7 @@ function showDocDialog() {
 
 function showSelectedDialog() {
   var dialog = HtmlService.createHtmlOutputFromFile('SelectedDialog');
-  dialog.setHeight(180);
+  dialog.setHeight(175);
   dialog.setWidth(470);
   DocumentApp.getUi().showModalDialog(dialog, 'Shorten selected URL');
 }
