@@ -9,6 +9,7 @@ function onOpen() {
   DocumentApp.getUi().createAddonMenu()
                      .addItem('Get document link', 'showDocDialog')
                      .addItem('Shorten selected URL', 'showSelectedDialog')
+                     .addItem('Shorten and replace selected URL', 'shortenAndReplace')
                      .addToUi();
 }
 
@@ -28,6 +29,13 @@ function showSelectedDialog() {
   dialog.setHeight(175);
   dialog.setWidth(470);
   DocumentApp.getUi().showModalDialog(dialog, 'Shorten selected URL');
+}
+
+function shortenAndReplace() {
+  var urls = shortenSelUrl();
+  if (urls) {
+    replaceSelectedInSelection(urls[0], urls[1]);
+  }
 }
 
 /**
