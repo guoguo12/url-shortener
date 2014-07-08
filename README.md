@@ -2,8 +2,9 @@ URL Shortener
 =============
 
 **URL Shortener** is a add-on for Google Docs that shortens long URLs using Google's URL Shortener service.
+Published on May 13, 2014, it has since been installed over 2,500 times.
 
-Install the live version of the add-on from the Chrome Web Store here: http://goo.gl/Db47dU.
+Find the add-on from the Chrome Web Store here: http://goo.gl/Db47dU.
 
 Need help? Check out the [help page](http://allenguo.us/projects/url-shortener/help.html).
 
