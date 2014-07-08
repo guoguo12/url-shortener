@@ -8,6 +8,14 @@ Find the add-on from the Chrome Web Store here: http://goo.gl/Db47dU.
 
 Need help? Check out the [help page](http://allenguo.us/projects/url-shortener/help.html).
 
+### Post-Install Tooltip
+
+> Select a URL you want to shorten, then choose "Shorten selected URL" from the URL Shortener sub-menu.
+
+### Store Description
+
+> Tired of long URLs in your paper or report? Want to send your friends a link to your document that isn't 80 characters long? Use URL Shortener to easily make URLs smaller and more manageable.
+
 License
 -------
 
