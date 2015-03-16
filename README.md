@@ -6,7 +6,7 @@ Published on May 13, 2014, it has since been installed over 2,500 times.
 
 Find the add-on on the Chrome Web Store here: http://goo.gl/Db47dU.
 
-Need help? Check out the [help page](http://allenguo.us/projects/url-shortener/help.html).
+Need help? Check out the [help page](https://guoguo12.github.io/projects/url-shortener/help.html).
 
 ### Post-Install Tooltip
 
