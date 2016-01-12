@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+<head>
 <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
 <style>
 input[type="text"] 
 {
-    width: 200px;
+    width: 150px;
 }
 </style>
+</head>
 
+<body>
 <div id="loading" class="gray">Loading...</div>
 <div id="main" style="display:none;">
 Shortened link to this document: <input id="url" onclick="this.select();" type="text" value="" readonly />
@@ -13,7 +17,7 @@ Shortened link to this document: <input id="url" onclick="this.select();" type="
 <br>
 <input type="button" class="action" value="Okay" onclick="google.script.host.close();">
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 $(function() {
   google.script.run.withSuccessHandler(start)
@@ -31,3 +35,5 @@ function fail(error) {
   google.script.run.showError(error.message + '.');
 }
 </script>
+</body>
+</html>

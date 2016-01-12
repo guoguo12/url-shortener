@@ -18,16 +18,20 @@ function onInstall() {
 }
 
 function showDocDialog() {
-  var dialog = HtmlService.createHtmlOutputFromFile('DocDialog');
-  dialog.setHeight(80);
-  dialog.setWidth(400);
+  var dialog = HtmlService
+    .createHtmlOutputFromFile('DocDialog')
+    .setSandboxMode(HtmlService.SandboxMode.IFRAME);
+  dialog.setHeight(88);
+  dialog.setWidth(375);
   DocumentApp.getUi().showModalDialog(dialog, 'Get document link');
 }
 
 function showSelectedDialog() {
-  var dialog = HtmlService.createHtmlOutputFromFile('SelectedDialog');
-  dialog.setHeight(175);
-  dialog.setWidth(470);
+  var dialog = HtmlService
+    .createHtmlOutputFromFile('SelectedDialog')
+    .setSandboxMode(HtmlService.SandboxMode.IFRAME);
+  dialog.setHeight(206);
+  dialog.setWidth(479);
   DocumentApp.getUi().showModalDialog(dialog, 'Shorten selected URL');
 }
 

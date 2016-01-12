@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<head>
 <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
 <style>
 input[type="text"] 
@@ -16,7 +18,9 @@ td
     padding-right: 10px;
 }
 </style>
+</head>
 
+<body>
 <div id="loading" class="gray">Loading...</div>
 <div id="main" style="display:none;">
 Selected URL: <br><input id="selUrl" onclick="this.select();" type="text" value="" readonly />
@@ -31,7 +35,7 @@ Shortened link: <br><input id="shortUrl" onclick="this.select();" type="text" va
 </td></tr></table>
 </div>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 var urls;
 
@@ -63,3 +67,5 @@ function replace() {
   $('#replace').attr('disabled', true);
 }
 </script>
+</body>
+</html>
