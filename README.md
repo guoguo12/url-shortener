@@ -1,7 +1,7 @@
 URL Shortener
 =============
 
-**Note: As of April 2019, this add-on is deprecated due to Google [deprecating](https://developers.googleblog.com/2018/03/transitioning-google-url-shortener.html) their URL shortener service.**
+**Note: As of April 2019, this add-on no longer works because Google has [deprecated](https://developers.googleblog.com/2018/03/transitioning-google-url-shortener.html) their URL shortener service.**
 
 **URL Shortener** is a add-on for Google Docs that shortens long URLs using Google's URL Shortener service.
 Published on May 13, 2014, it has since been installed over 46,000 times.
